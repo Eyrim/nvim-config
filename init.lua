@@ -1,4 +1,4 @@
-require("lua.remap")
+require("remap")
 require("vim-options")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
