@@ -1,5 +1,5 @@
 local nvim_cmp = require("cmp")
-local luasnip = require("luasnip");
+local luasnip = require("luasnip")
 
 nvim_cmp.setup({
 	snippet = {
@@ -8,7 +8,7 @@ nvim_cmp.setup({
 		end,
 	},
 	window = {
-        -- Doesn't play well with lsp completions
+		-- Doesn't play well with lsp completions
 		-- completion = nvim_cmp.config.window.bordered(),
 		-- documentation = nvim_cmp.config.window.bordered(),
 	},
@@ -24,5 +24,7 @@ nvim_cmp.setup({
 		{ name = "luasnip" }, -- For luasnip users.
 	}, {
 		{ name = "buffer" },
+	}, {
+		{ name = "nvim_lsp_signature_help" },
 	}),
 })
