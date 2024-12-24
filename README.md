@@ -22,6 +22,7 @@ Included plugins are:
 * [nvim-telescope/telescope-ui-select.nvim](https://github/com/nvim-telescope/telescope-ui-select.nvim)
 * [nvim-treesitter/nvim-treesitter](https://github/com/nvim-treesitter/nvim-treesitter)
 * [folke/trouble.nvim](https://github/com/folke/trouble.nvim)
+* [pmizio/typescript-tools.nvim](https://github.com/pmizio/typescript-tools.nvim)
 
 This configuration is kind of intended to be used with my [nix-os config](https://github.com/Eyrim/nixos-config) due to the LSP configuration being done manually with [the nvim-lspconfig list](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md).
 
