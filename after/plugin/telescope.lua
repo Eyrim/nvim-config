@@ -1,5 +1,7 @@
 local builtin = require("telescope.builtin")
-local telescope = require("telescope").load_extension("ui-select")
+local telescope = require("telescope")
+telescope.load_extension("ui-select")
+telescope.load_extension("flutter")
 
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })

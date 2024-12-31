@@ -9,15 +9,16 @@ lsp_config.lua_ls.setup({
 	},
 })
 
--- If using nvim-java/nvim-java, don't setup jdtls
--- It is setup in the after file for that plugin
+-- LSP's to not setup here:
+-- jdtls: configured by nvim-java
+-- dart_ls: configured by flutter_tools
 lsp_config.kotlin_language_server.setup({})
-lsp_config.dartls.setup({})
 lsp_config.nil_ls.setup({})
 lsp_config.bashls.setup({})
 lsp_config.dockerls.setup({})
 
 require("typescript-tools").setup({})
+require("flutter-tools").setup({})
 
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
