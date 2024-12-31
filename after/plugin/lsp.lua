@@ -10,6 +10,7 @@ lsp_config.lua_ls.setup({
 })
 
 -- LSP's to not setup here:
+---------------------------
 -- jdtls: configured by nvim-java
 -- dart_ls: configured by flutter_tools
 lsp_config.kotlin_language_server.setup({})
